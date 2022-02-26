@@ -1,0 +1,5 @@
+% Caso Base - Factorial de Cero
+factorial(0, 1).
+
+% Cualquier otro numero
+factorial(X, F) :- X>0, A is (X-1),factorial(A,B), F is X*B.
